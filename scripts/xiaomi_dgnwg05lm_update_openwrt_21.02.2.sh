@@ -5,9 +5,9 @@ set -e
 cd /tmp
 echo "Starting the procedure for updating OpenWRT from version 19.07 to 21.02.02"
 sleep 2
-wget https://openlumi.github.io/releases/21.02.2/targets/imx6/generic/u-boot-xiaomi_dgnwg05lm/u-boot.imx -O /tmp/u-boot.imx
-wget https://openlumi.github.io/releases/21.02.2/targets/imx6/generic/openlumi-21.02.2-imx6-imx6ull-xiaomi-dgnwg05lm.dtb -O /tmp/openwrt-imx6-imx6ull-xiaomi-dgnwg05lm.dtb
-wget https://openlumi.github.io/releases/21.02.2/targets/imx6/generic/openlumi-21.02.2-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin -O /tmp/openwrt-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin
+wget https://openlumi.github.io/archive/21.02.2/targets/imx6/generic/u-boot-xiaomi_dgnwg05lm/u-boot.imx -O /tmp/u-boot.imx
+wget https://openlumi.github.io/archive/21.02.2/targets/imx6/generic/openlumi-21.02.2-imx6-imx6ull-xiaomi-dgnwg05lm.dtb -O /tmp/openwrt-imx6-imx6ull-xiaomi-dgnwg05lm.dtb
+wget https://openlumi.github.io/archive/21.02.2/targets/imx6/generic/openlumi-21.02.2-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin -O /tmp/openwrt-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin
 echo "The files are downloaded to the tmp folder. Done"
 sleep 2
 echo "Starting replace model marks to allow upgrade with new files for update OpenWRT 21.02.02"
